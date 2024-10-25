@@ -55,7 +55,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.10.24.1024. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.11.24.1024. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -95,34 +95,33 @@ function SendBusinessCard(){
 		liffId:"2006499149-ZvvbxV6J"
 	}).then(() => {
 		alert("init success");
+		if (!liff.isLoggedIn()) {
+			liff.login().then(() => {
+				alert("login success");
+				if (liff.isApiAvailable('shareTargetPicker')) {
+					liff.shareTargetPicker([
+						{
+						  type: "text",
+						  text: "Hello, World!",
+						},
+					]).then(() => {
+						alert("shareTargetPicker success");
+					});
+				}
+				else
+				{
+					alert("Failed to launch ShareTargetPicker");
+				}
+			});
+		}else{
+			alert("already login");
+		}
+		liff.logout();
 	}).catch(function(error) {
 		console.log(error);
 	});		
 		
-	if (!liff.isLoggedIn()) {
-		liff.login().then(() => {
-			alert("login success");
-		});
-	}else{
-		alert("already login");
-	}
 	
-	if (liff.isApiAvailable('shareTargetPicker')) {
-		liff.shareTargetPicker([
-			{
-			  type: "text",
-			  text: "Hello, World!",
-			},
-		]).then(() => {
-			alert("shareTargetPicker success");
-		});
-	}
-	else
-	{
-		alert("Failed to launch ShareTargetPicker");
-	}
-	
-	liff.logout();
 }
 
 $("#buttom_SendBusinessCard").click(function(){

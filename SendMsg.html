@@ -13,31 +13,30 @@
 <script src="js/sb-admin-2.min.js"></script>
 	
 <script>
-function SendBusinessCard(){
+async function SendBusinessCard(){
 	alert("click");
-	liff.init({
+	await liff.init({
 		liffId:"2006499149-ZvvbxV6J"
-	}).then(() => {
-		alert("init success");
-		
-		if (liff.isApiAvailable('shareTargetPicker')) {
-			liff.shareTargetPicker([
-				{
-				  type: "text",
-				  text: "Hello, World!",
-				},
-			]).then(() => {
-				alert("shareTargetPicker success");
-			});
-		}
-		else
-		{
-			alert("Failed to launch ShareTargetPicker");
-		}
 	}).catch(function(error) {
 		console.log(error);
 	});		
 		
+	alert("init success");
+		
+	if (liff.isApiAvailable('shareTargetPicker')) {
+		await liff.shareTargetPicker([
+			{
+			  type: "text",
+			  text: "Hello, World!",
+			},
+		]).then(() => {
+			alert("shareTargetPicker success");
+		});
+	}
+	else
+	{
+		await alert("Failed to launch ShareTargetPicker");
+	}
 	
 }
 

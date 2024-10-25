@@ -59,7 +59,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.15.24.1024. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.16.24.1024. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -99,36 +99,9 @@ async function SendBusinessCard(){
 		liffId:"2006499149-ZvvbxV6J"
 	});		
 	
-		if (!liff.isLoggedIn()) {
-			alert("not login");
-			liff.login();
-			alert("login success");
-			
-		}else{
-			alert("already login");
-		}
-		
-		liff.sendMessages([
-			{
-			  type: "text",
-			  text: "Hello, World!",
-			},
-		  ]);
-		/*
-		if (liff.isApiAvailable('shareTargetPicker')) {
-				liff.shareTargetPicker([
-					{
-					  type: "text",
-					  text: "Hello, World!",
-					},
-				]).then(() => {
-					alert("shareTargetPicker success");
-				});
-			}
-			else
-			{
-				alert("Failed to launch ShareTargetPicker");
-		}*/
+	if (!liff.isLoggedIn()) {
+		await liff.login();		
+	}
 }
 
 $("#buttom_SendBusinessCard").click(function(){

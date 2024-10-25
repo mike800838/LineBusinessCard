@@ -19,26 +19,20 @@ function SendBusinessCard(){
 		liffId:"2006499149-ZvvbxV6J"
 	}).then(() => {
 		alert("init success");
-		if (!liff.isLoggedIn()) {
-			liff.login().then(() => {
-				alert("login success");
-				if (liff.isApiAvailable('shareTargetPicker')) {
-					liff.shareTargetPicker([
-						{
-						  type: "text",
-						  text: "Hello, World!",
-						},
-					]).then(() => {
-						alert("shareTargetPicker success");
-					});
-				}
-				else
+		
+		if (liff.isApiAvailable('shareTargetPicker')) {
+			liff.shareTargetPicker([
 				{
-					alert("Failed to launch ShareTargetPicker");
-				}
+				  type: "text",
+				  text: "Hello, World!",
+				},
+			]).then(() => {
+				alert("shareTargetPicker success");
 			});
-		}else{
-			alert("already login");
+		}
+		else
+		{
+			alert("Failed to launch ShareTargetPicker");
 		}
 	}).catch(function(error) {
 		console.log(error);
@@ -47,9 +41,7 @@ function SendBusinessCard(){
 	
 }
 
-$("#buttom_SendBusinessCard").click(function(){
+$(window).load(function() {
 	SendBusinessCard();
 });
-
-$(document).ready()
 </script>

@@ -55,7 +55,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.0.24.1024. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.2.24.1024. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -89,15 +89,13 @@
 </html>
 
 <script>
-function SendBusinessCard(sID){
-	try {
+function SendBusinessCard(){
 		console.log("SendBusinessCard");
-		liff.init({ liffId: sID });
-		if (!liff.isLoggedIn()) {
+		liff.init({
+			liffId: "2006495953-8GO9roA3" ,
+		}).then(() => {
 			liff.login();
-		}
-		
-		if (liff.isApiAvailable('shareTargetPicker')) {
+			if (liff.isApiAvailable('shareTargetPicker')) {
 			liff.shareTargetPicker([
 				{
 				  "type": "flex",
@@ -257,13 +255,15 @@ function SendBusinessCard(sID){
 				}
 			]);
 		}
+		});		
+		
 
-	} catch (error) {
-		console.error("Error initializing LIFF:", error);
-	}
+		
+		
+
 }
 
 $("#buttom_SendBusinessCard").click(function(){
-	SendBusinessCard("2006495953-8GO9roA3");
+	SendBusinessCard();
 });
 </script>

@@ -1,0 +1,55 @@
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Line Liff JavaScript-->
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+	
+<script>
+function SendBusinessCard(){
+	alert("click");
+	liff.init({
+		liffId:"2006499149-ZvvbxV6J"
+	}).then(() => {
+		alert("init success");
+		if (!liff.isLoggedIn()) {
+			liff.login().then(() => {
+				alert("login success");
+				if (liff.isApiAvailable('shareTargetPicker')) {
+					liff.shareTargetPicker([
+						{
+						  type: "text",
+						  text: "Hello, World!",
+						},
+					]).then(() => {
+						alert("shareTargetPicker success");
+					});
+				}
+				else
+				{
+					alert("Failed to launch ShareTargetPicker");
+				}
+			});
+		}else{
+			alert("already login");
+		}
+	}).catch(function(error) {
+		console.log(error);
+	});		
+		
+	
+}
+
+$("#buttom_SendBusinessCard").click(function(){
+	SendBusinessCard();
+});
+
+$(document).ready()
+</script>

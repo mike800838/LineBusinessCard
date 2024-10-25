@@ -93,14 +93,10 @@
 </html>
 
 <script>
-function SendBusinessCard(){
-	alert("click");
-	liff.init({
+async function SendBusinessCard(){
+
+	await liff.init({
 		liffId:"2006499149-ZvvbxV6J"
-	}).then(() => {
-		alert("init success");
-	}).catch(function(error) {
-		console.log(error);
 	});		
 	
 		if (!liff.isLoggedIn()) {

@@ -89,13 +89,14 @@
 </html>
 
 <script>
-function SendBusinessCard(liffId){
+function SendBusinessCard(sID){
 	try {
 		console.log("SendBusinessCard");
-		liff.init({ liffId });
+		liff.init({ liffId: sID });
 		if (!liff.isLoggedIn()) {
 			liff.login();
 		}
+		
 		if (liff.isApiAvailable('shareTargetPicker')) {
 			liff.shareTargetPicker([
 				{

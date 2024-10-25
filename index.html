@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>大吉科技 - Line Business Card</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+					<div class="row">
+						<div class="col text-center">
+							<a href="#" class="btn btn-success btn-icon-split" id="buttom_SendBusinessCard">                                        
+								<span class="text">發送LINE名片</span>
+								<span class="icon text-white-50">
+									<i class="fas fa-arrow-right"></i>
+								</span>
+                            </a>
+						</div>
+					</div>
+				</div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+	<!-- Line Liff JavaScript-->
+	<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
+	
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
+
+<script>
+async function SendBusinessCard(liffId){
+	try {
+		await liff.init({ liffId });
+		if (liff.isLoggedIn()) {
+			if (liff.isApiAvailable('shareTargetPicker')) {
+				liff.shareTargetPicker([
+					{
+					  "type": "flex",
+					  "altText": "this is a flex message",
+					  "contents": {
+					  "type": "bubble",
+					  "hero": {
+						"type": "image",
+						"url": "https://developers-resource.landpress.line.me/fx/img/01_1_cafe.png",
+						"size": "full",
+						"aspectRatio": "20:13",
+						"aspectMode": "cover",
+						"action": {
+						  "type": "uri",
+						  "uri": "https://line.me/"
+						}
+					  },
+					  "body": {
+						"type": "box",
+						"layout": "vertical",
+						"contents": [
+						  {
+							"type": "text",
+							"text": "Brown Cafe",
+							"weight": "bold",
+							"size": "xl"
+						  },
+						  {
+							"type": "box",
+							"layout": "baseline",
+							"margin": "md",
+							"contents": [
+							  {
+								"type": "icon",
+								"size": "sm",
+								"url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
+							  },
+							  {
+								"type": "icon",
+								"size": "sm",
+								"url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
+							  },
+							  {
+								"type": "icon",
+								"size": "sm",
+								"url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
+							  },
+							  {
+								"type": "icon",
+								"size": "sm",
+								"url": "https://developers-resource.landpress.line.me/fx/img/review_gold_star_28.png"
+							  },
+							  {
+								"type": "icon",
+								"size": "sm",
+								"url": "https://developers-resource.landpress.line.me/fx/img/review_gray_star_28.png"
+							  },
+							  {
+								"type": "text",
+								"text": "4.0",
+								"size": "sm",
+								"color": "#999999",
+								"margin": "md",
+								"flex": 0
+							  }
+							]
+						  },
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"margin": "lg",
+							"spacing": "sm",
+							"contents": [
+							  {
+								"type": "box",
+								"layout": "baseline",
+								"spacing": "sm",
+								"contents": [
+								  {
+									"type": "text",
+									"text": "Place",
+									"color": "#aaaaaa",
+									"size": "sm",
+									"flex": 1
+								  },
+								  {
+									"type": "text",
+									"text": "Flex Tower, 7-7-4 Midori-ku, Tokyo",
+									"wrap": true,
+									"color": "#666666",
+									"size": "sm",
+									"flex": 5
+								  }
+								]
+							  },
+							  {
+								"type": "box",
+								"layout": "baseline",
+								"spacing": "sm",
+								"contents": [
+								  {
+									"type": "text",
+									"text": "Time",
+									"color": "#aaaaaa",
+									"size": "sm",
+									"flex": 1
+								  },
+								  {
+									"type": "text",
+									"text": "10:00 - 23:00",
+									"wrap": true,
+									"color": "#666666",
+									"size": "sm",
+									"flex": 5
+								  }
+								]
+							  }
+							]
+						  }
+						]
+					  },
+					  "footer": {
+						"type": "box",
+						"layout": "vertical",
+						"spacing": "sm",
+						"contents": [
+						  {
+							"type": "button",
+							"style": "link",
+							"height": "sm",
+							"action": {
+							  "type": "uri",
+							  "label": "CALL",
+							  "uri": "https://line.me/"
+							}
+						  },
+						  {
+							"type": "button",
+							"style": "link",
+							"height": "sm",
+							"action": {
+							  "type": "uri",
+							  "label": "WEBSITE",
+							  "uri": "https://line.me/"
+							}
+						  },
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [],
+							"margin": "sm"
+						  }
+						],
+						"flex": 0
+					  }
+					}
+					}
+				]);
+			}
+		} else {
+			document.getElementById('buttom_SendBusinessCard').style.display = 'block';
+		}
+	} catch (error) {
+		console.error("Error initializing LIFF:", error);
+	}
+}
+
+$("#buttom_SendBusinessCard").click(function(){
+	SendBusinessCard("2006495953-8GO9roA3");
+});
+</script>

@@ -62,7 +62,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.19.24.1024. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.20.24.1024. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -97,14 +97,15 @@
 
 <script>
 async function SendBusinessCard(){
-
+	alert("click");
 	await liff.init({
 		liffId:"2006499149-ZvvbxV6J"
 	});		
-	
+	alert("init");
 	if (!liff.isLoggedIn()) {
 		await liff.login();		
 	}
+	alert("login");
 }
 
 $("#buttom_SendBusinessCard").click(function(){

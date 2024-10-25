@@ -92,9 +92,13 @@
 function SendBusinessCard(){
 		console.log("SendBusinessCard");
 		liff.init({
-			liffId: "2006495953-8GO9roA3" ,
+			liffId:"2006499149-ZvvbxV6J",
 		}).then(() => {
-			liff.login();
+			if (!liff.isLoggedIn()) {
+			  liff.login();
+			}
+			const accessToken = liff.getAccessToken();
+			
 			if (liff.isApiAvailable('shareTargetPicker')) {
 			liff.shareTargetPicker([
 				{
@@ -253,8 +257,13 @@ function SendBusinessCard(){
 				  }
 				}
 				}
-			]);
+			],{
+			  isMultiple: true,
+			});
+		}else{
+		console.log("Failed to launch ShareTargetPicker");
 		}
+		
 		});		
 		
 

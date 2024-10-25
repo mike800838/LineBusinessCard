@@ -90,12 +90,14 @@
 
 <script>
 function SendBusinessCard(){
-
+	alert("click");
 		liff.init({
 			liffId:"2006499149-ZvvbxV6J",
 		}).then(() => {
+		alert("init");
 			if (!liff.isLoggedIn()) {
 				liff.login().then(() => {
+				alert("login");
 					if (liff.isApiAvailable('shareTargetPicker')) {
 						liff.shareTargetPicker([
 							{
@@ -106,7 +108,7 @@ function SendBusinessCard(){
 					}
 					else
 					{
-						console.log("Failed to launch ShareTargetPicker");
+						alert("Failed to launch ShareTargetPicker");
 					}
 					
 					liff.logout();

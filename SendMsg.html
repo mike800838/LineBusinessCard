@@ -89,7 +89,7 @@ async function SendBusinessCard(){
 	if (liff.isApiAvailable('shareTargetPicker')) {
 		await liff.shareTargetPicker([
 			{
-			  {
+			  
 			  "type": "carousel",
 			  "contents": [
 				{
@@ -380,8 +380,9 @@ async function SendBusinessCard(){
 					"paddingAll": "0px"
 				  }
 				}
-			  ]
-			}
+				]
+				
+			
 			},
 		]).then(() => {
 			alert("shareTargetPicker success");

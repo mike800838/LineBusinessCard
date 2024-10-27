@@ -81,7 +81,7 @@ async function SendBusinessCard(){
 	await liff.init({
 		liffId:"2006499149-ZvvbxV6J"
 	}).catch(function(error) {
-		console.log(error);
+		alert(error);
 	});		
 		
 	alert("init success");
@@ -90,306 +90,308 @@ async function SendBusinessCard(){
 		await liff.shareTargetPicker([
 			{
 			  {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3",
-            "gravity": "top"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "陳俊成",
-                    "size": "xl",
-                    "color": "#ffffff",
-                    "weight": "bold"
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "baseline",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "- 台灣茶葉商",
-                    "color": "#ebebeb",
-                    "size": "sm",
-                    "flex": 0
-                  }
-                ],
-                "spacing": "lg"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "filler"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "filler"
-                      },
-                      {
-                        "type": "text",
-                        "text": "加入心悅官方LINE",
-                        "color": "#ffffff",
-                        "flex": 0,
-                        "offsetTop": "-2px"
-                      },
-                      {
-                        "type": "filler"
-                      }
-                    ],
-                    "spacing": "sm"
-                  },
-                  {
-                    "type": "filler"
-                  }
-                ],
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "spacing": "sm",
-                "borderColor": "#ffffff",
-                "margin": "xxl",
-                "height": "40px"
-              }
-            ],
-            "position": "absolute",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#FF0000CC",
-            "paddingAll": "20px",
-            "paddingTop": "18px"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3",
-            "gravity": "top"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "各式茶食禮盒",
-                    "size": "xl",
-                    "color": "#ffffff",
-                    "weight": "bold"
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "baseline",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "送禮最佳選擇",
-                    "color": "#ebebeb",
-                    "size": "sm",
-                    "flex": 0
-                  }
-                ],
-                "spacing": "lg"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "filler"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "filler"
-                      },
-                      {
-                        "type": "text",
-                        "text": "購買茶葉禮盒",
-                        "color": "#ffffff",
-                        "flex": 0,
-                        "offsetTop": "-2px"
-                      },
-                      {
-                        "type": "filler"
-                      }
-                    ],
-                    "spacing": "sm"
-                  },
-                  {
-                    "type": "filler"
-                  }
-                ],
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "spacing": "sm",
-                "borderColor": "#ffffff",
-                "margin": "xxl",
-                "height": "40px"
-              }
-            ],
-            "position": "absolute",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#FF0000CC",
-            "paddingAll": "20px",
-            "paddingTop": "18px"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3",
-            "gravity": "top"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "size": "xl",
-                    "color": "#ffffff",
-                    "weight": "bold",
-                    "text": "茶葉花茶任選"
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "baseline",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "每樣都好喝",
-                    "color": "#ebebeb",
-                    "size": "sm",
-                    "flex": 0
-                  }
-                ],
-                "spacing": "lg"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "filler"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "filler"
-                      },
-                      {
-                        "type": "text",
-                        "text": "購買茶葉禮盒",
-                        "color": "#ffffff",
-                        "flex": 0,
-                        "offsetTop": "-2px"
-                      },
-                      {
-                        "type": "filler"
-                      }
-                    ],
-                    "spacing": "sm"
-                  },
-                  {
-                    "type": "filler"
-                  }
-                ],
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "spacing": "sm",
-                "borderColor": "#ffffff",
-                "margin": "xxl",
-                "height": "40px"
-              }
-            ],
-            "position": "absolute",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#FF0000CC",
-            "paddingAll": "20px",
-            "paddingTop": "18px"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    }
-  ]
-}
+			  "type": "carousel",
+			  "contents": [
+				{
+				  "type": "bubble",
+				  "body": {
+					"type": "box",
+					"layout": "vertical",
+					"contents": [
+					  {
+						"type": "image",
+						"url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1.png",
+						"size": "full",
+						"aspectMode": "cover",
+						"aspectRatio": "2:3",
+						"gravity": "top"
+					  },
+					  {
+						"type": "box",
+						"layout": "vertical",
+						"contents": [
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "text",
+								"text": "陳俊成",
+								"size": "xl",
+								"color": "#ffffff",
+								"weight": "bold"
+							  }
+							]
+						  },
+						  {
+							"type": "box",
+							"layout": "baseline",
+							"contents": [
+							  {
+								"type": "text",
+								"text": "- 台灣茶葉商",
+								"color": "#ebebeb",
+								"size": "sm",
+								"flex": 0
+							  }
+							],
+							"spacing": "lg"
+						  },
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "filler"
+							  },
+							  {
+								"type": "box",
+								"layout": "baseline",
+								"contents": [
+								  {
+									"type": "filler"
+								  },
+								  {
+									"type": "text",
+									"text": "加入心悅官方LINE",
+									"color": "#ffffff",
+									"flex": 0,
+									"offsetTop": "-2px"
+								  },
+								  {
+									"type": "filler"
+								  }
+								],
+								"spacing": "sm"
+							  },
+							  {
+								"type": "filler"
+							  }
+							],
+							"borderWidth": "1px",
+							"cornerRadius": "4px",
+							"spacing": "sm",
+							"borderColor": "#ffffff",
+							"margin": "xxl",
+							"height": "40px"
+						  }
+						],
+						"position": "absolute",
+						"offsetBottom": "0px",
+						"offsetStart": "0px",
+						"offsetEnd": "0px",
+						"backgroundColor": "#FF0000CC",
+						"paddingAll": "20px",
+						"paddingTop": "18px"
+					  }
+					],
+					"paddingAll": "0px"
+				  }
+				},
+				{
+				  "type": "bubble",
+				  "body": {
+					"type": "box",
+					"layout": "vertical",
+					"contents": [
+					  {
+						"type": "image",
+						"url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2.png",
+						"size": "full",
+						"aspectMode": "cover",
+						"aspectRatio": "2:3",
+						"gravity": "top"
+					  },
+					  {
+						"type": "box",
+						"layout": "vertical",
+						"contents": [
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "text",
+								"text": "各式茶食禮盒",
+								"size": "xl",
+								"color": "#ffffff",
+								"weight": "bold"
+							  }
+							]
+						  },
+						  {
+							"type": "box",
+							"layout": "baseline",
+							"contents": [
+							  {
+								"type": "text",
+								"text": "送禮最佳選擇",
+								"color": "#ebebeb",
+								"size": "sm",
+								"flex": 0
+							  }
+							],
+							"spacing": "lg"
+						  },
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "filler"
+							  },
+							  {
+								"type": "box",
+								"layout": "baseline",
+								"contents": [
+								  {
+									"type": "filler"
+								  },
+								  {
+									"type": "text",
+									"text": "購買茶葉禮盒",
+									"color": "#ffffff",
+									"flex": 0,
+									"offsetTop": "-2px"
+								  },
+								  {
+									"type": "filler"
+								  }
+								],
+								"spacing": "sm"
+							  },
+							  {
+								"type": "filler"
+							  }
+							],
+							"borderWidth": "1px",
+							"cornerRadius": "4px",
+							"spacing": "sm",
+							"borderColor": "#ffffff",
+							"margin": "xxl",
+							"height": "40px"
+						  }
+						],
+						"position": "absolute",
+						"offsetBottom": "0px",
+						"offsetStart": "0px",
+						"offsetEnd": "0px",
+						"backgroundColor": "#FF0000CC",
+						"paddingAll": "20px",
+						"paddingTop": "18px"
+					  }
+					],
+					"paddingAll": "0px"
+				  }
+				},
+				{
+				  "type": "bubble",
+				  "body": {
+					"type": "box",
+					"layout": "vertical",
+					"contents": [
+					  {
+						"type": "image",
+						"url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3.png",
+						"size": "full",
+						"aspectMode": "cover",
+						"aspectRatio": "2:3",
+						"gravity": "top"
+					  },
+					  {
+						"type": "box",
+						"layout": "horizontal",
+						"contents": [
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "text",
+								"size": "xl",
+								"color": "#ffffff",
+								"weight": "bold",
+								"text": "茶葉花茶任選"
+							  }
+							]
+						  },
+						  {
+							"type": "box",
+							"layout": "baseline",
+							"contents": [
+							  {
+								"type": "text",
+								"text": "每樣都好喝",
+								"color": "#ebebeb",
+								"size": "sm",
+								"flex": 0
+							  }
+							],
+							"spacing": "lg"
+						  },
+						  {
+							"type": "box",
+							"layout": "vertical",
+							"contents": [
+							  {
+								"type": "filler"
+							  },
+							  {
+								"type": "box",
+								"layout": "baseline",
+								"contents": [
+								  {
+									"type": "filler"
+								  },
+								  {
+									"type": "text",
+									"text": "購買茶葉禮盒",
+									"color": "#ffffff",
+									"flex": 0,
+									"offsetTop": "-2px"
+								  },
+								  {
+									"type": "filler"
+								  }
+								],
+								"spacing": "sm"
+							  },
+							  {
+								"type": "filler"
+							  }
+							],
+							"borderWidth": "1px",
+							"cornerRadius": "4px",
+							"spacing": "sm",
+							"borderColor": "#ffffff",
+							"margin": "xxl",
+							"height": "40px"
+						  }
+						],
+						"position": "absolute",
+						"offsetBottom": "0px",
+						"offsetStart": "0px",
+						"offsetEnd": "0px",
+						"backgroundColor": "#FF0000CC",
+						"paddingAll": "20px",
+						"paddingTop": "18px"
+					  }
+					],
+					"paddingAll": "0px"
+				  }
+				}
+			  ]
+			}
 			},
 		]).then(() => {
 			alert("shareTargetPicker success");
+		}).catch(function(error) {
+			alert(error);
 		});
 	}
 	else
 	{
-		await alert("Failed to launch ShareTargetPicker");
+		alert("Failed to launch ShareTargetPicker");
 	}
 	
 }

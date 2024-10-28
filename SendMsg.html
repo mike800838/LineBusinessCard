@@ -99,6 +99,15 @@ async function SendBusinessCard(){
 	}).catch(function(error) {
 		WriteLog(giLog_LEVEL_EXCEPTION, error);
 	});		
+	
+	await liff.getProfile().then((profile) => {
+		alert("userId = " + profile.userId);
+		alert("displayName = " + profile.displayName);
+		alert("pictureUrl = " + profile.pictureUrl);
+		alert("statusMessage = " + profile.statusMessage);
+	}).catch((err) => {
+		console.log("error", err);
+	});
 		
 	WriteLog(giLog_LEVEL_INFO,"init success");
 		

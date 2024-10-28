@@ -46,7 +46,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.15.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.16.24.1028. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -102,9 +102,6 @@ async function SendBusinessCard(){
 	
 	await liff.getProfile().then((profile) => {
 		alert("userId = " + profile.userId);
-		alert("displayName = " + profile.displayName);
-		alert("pictureUrl = " + profile.pictureUrl);
-		alert("statusMessage = " + profile.statusMessage);
 	}).catch((err) => {
 		console.log("error", err);
 	});

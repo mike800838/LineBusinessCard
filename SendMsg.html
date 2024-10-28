@@ -43,7 +43,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.5.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.6.24.1028. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -400,12 +400,15 @@ async function SendBusinessCard(){
 		}).catch(function(error) {
 			WriteLog(giLog_LEVEL_EXCEPTION, error);
 		});
-		liff.closewindow();
+		
 	}
 	else
 	{
 		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
 	}
+	WriteLog(giLog_LEVEL_INFO,"Finish");
+	
+	liff.closewindow();
 	
 }
 

@@ -43,7 +43,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.4.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.5.24.1028. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -76,15 +76,28 @@
 
 </html>
 <script>
+var giLog_LEVEL_INFO = 0;
+var giLog_LEVEL_SUCCESS = 1;
+var giLog_LEVEL_FAIL = 2;
+var giLog_LEVEL_WARNING = 3;
+var giLog_LEVEL_EXCEPTION = 4;
+var gaLog_LEVEL_DESCRIPTION = ["[資訊]","[成功]","[失敗]","[警告]","[異常]"];
+
+function WriteLog(iLogLevel, sLogMsg){
+	alert(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+	//console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+}
+
+
 async function SendBusinessCard(){
-	alert("click");
+	WriteLog(giLog_LEVEL_INFO,"click");
 	await liff.init({
 		liffId:"2006499149-ZvvbxV6J"
 	}).catch(function(error) {
-		alert(error);
+		WriteLog(giLog_LEVEL_EXCEPTION, error);
 	});		
 		
-	alert("init success");
+	WriteLog(giLog_LEVEL_INFO,"init success");
 		
 	if (liff.isApiAvailable('shareTargetPicker')) {
 		await liff.shareTargetPicker([
@@ -92,12 +105,7 @@ async function SendBusinessCard(){
 			  "type": "flex",
 			  "altText": "this is a flex message",
 			  "contents": {
-				"type": "bubble",
-				"body": {
-				  "type": "box",
-				  "layout": "vertical",
-				  "contents": [
-					{
+				{
 			  {
 			  "type": "carousel",
 			  "contents": [
@@ -392,20 +400,18 @@ async function SendBusinessCard(){
 			  ]
 			}
 			}
-				  ]
-				}
 			  }
 			}
 		],{}).then(() => {
-			alert("shareTargetPicker success");
+			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
 		}).catch(function(error) {
-			alert(error);
+			WriteLog(giLog_LEVEL_EXCEPTION, error);
 		});
 		liff.closewindow();
 	}
 	else
 	{
-		alert("Failed to launch ShareTargetPicker");
+		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
 	}
 	
 }

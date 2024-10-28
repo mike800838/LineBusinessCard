@@ -62,7 +62,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.14.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.15.24.1028. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -104,8 +104,8 @@ var giLog_LEVEL_EXCEPTION = 4;
 var gaLog_LEVEL_DESCRIPTION = ["[資訊]","[成功]","[失敗]","[警告]","[異常]"];
 
 function WriteLog(iLogLevel, sLogMsg){
-	alert(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
-	//console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+	//alert(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
 async function SendBusinessCard(){

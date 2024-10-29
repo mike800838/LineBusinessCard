@@ -108,7 +108,10 @@ async function SendBusinessCard(){
 	
 	if(sUserID){
 		if (liff.isApiAvailable('shareTargetPicker')) {
-			await liff.shareTargetPicker(FlexMessage).then(() => {
+			await liff.shareTargetPicker({
+				type: "text",
+				text: "Line User ID:" + sUserID,
+			  }).then(() => {
 				WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
 			}).catch(function(error) {
 				WriteLog(giLog_LEVEL_EXCEPTION, error);

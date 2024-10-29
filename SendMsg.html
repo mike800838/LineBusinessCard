@@ -46,7 +46,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.17.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.0.24.1029. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -91,31 +91,29 @@ function WriteLog(iLogLevel, sLogMsg){
 	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
-
-async function SendBusinessCard(){
-	WriteLog(giLog_LEVEL_INFO,"click");
-	await liff.init({
-		liffId:"2006499149-ZvvbxV6J"
+function Liff_Init(oliff, sliff_id){
+	liff.init({
+		liffId:sliff_id
 	}).catch(function(error) {
 		WriteLog(giLog_LEVEL_EXCEPTION, error);
 	});		
 	WriteLog(giLog_LEVEL_INFO,"init success");
-	
-	var sUserID = "";	
-	await liff.getProfile().then((profile) => {
+}
+
+function Liff_GetUserID(oliff){
+	var sUserID = "";
+	oliff.getProfile().then((profile) => {
 		sUserID = profile.userId;
 	}).catch((err) => {
 		WriteLog(giLog_LEVEL_EXCEPTION, error);
 	});
 	WriteLog(giLog_LEVEL_INFO,"getProfile success");
-	
-	
-	var FlexMessage = "";
-	if(sUserID){
-		FlexMessage = BusinessCardFlexArray[sUserID];
-		if(FlexMessage){
-			if (liff.isApiAvailable('shareTargetPicker')) {
-			await liff.shareTargetPicker([
+	return sUserID;
+}
+
+function Liff_SelectUserToSend(oliff){
+	if (oliff.isApiAvailable('shareTargetPicker')) {
+			oliff.shareTargetPicker([
 				{
 				  "type": "flex",
 				  "altText": "this is a flex message",
@@ -435,17 +433,33 @@ async function SendBusinessCard(){
 			}).catch(function(error) {
 				WriteLog(giLog_LEVEL_EXCEPTION, error);
 			});
+			
 			}
 			else
 			{
 				WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
 			}
+}
+
+async function SendBusinessCard(){
+	WriteLog(giLog_LEVEL_INFO,"click");
+	await Liff_Init(liff, "2006499149-ZvvbxV6J");
+	
+	//var sUserID = Liff_GetUserID(liff);
+	
+	Liff_SelectUserToSend(liff);
+	/*
+	var FlexMessage = "";	
+	if(sUserID){
+		FlexMessage = BusinessCardFlexArray[sUserID];
+		if(FlexMessage){
+			Liff_SelectUserToSend(liff);
 		}else{
 			alert("找不到戶名片");
 		}
 	}else{
 		alert("無法取得用戶ID");
-	}	
+	}	*/
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");
 	

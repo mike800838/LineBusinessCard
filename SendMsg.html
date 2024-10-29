@@ -46,7 +46,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.6.24.1029. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.7.24.1029. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -74,7 +74,7 @@
 	
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
+	<script src="BusinessCardFlex.js"></script>
 </body>
 
 </html>
@@ -105,7 +105,7 @@ async function SendBusinessCard(){
 	var sUserID = "";	
 	await liff.getProfile().then((profile) => {
 		sUserID = profile.userId;
-	}).catch((err) => {
+	}).catch((error) => {
 		WriteLog(giLog_LEVEL_EXCEPTION, error);
 	});
 	WriteLog(giLog_LEVEL_INFO,"getProfile success");
@@ -136,7 +136,7 @@ async function SendBusinessCard(){
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");
 	
-	liff.closeWindow();
+	//liff.closeWindow();
 }
 
 $( document ).ready(function() {

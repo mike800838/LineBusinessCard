@@ -1,5 +1,5 @@
 BusinessCardFlexArray={
-	"Ud27c8a222e4b1f2718f0e576bbeeb66a", "[
+	"Ud27c8a222e4b1f2718f0e576bbeeb66a": [
 				{
 				  'type': 'flex',
 				  'altText': 'this is a flex message',
@@ -314,6 +314,5 @@ BusinessCardFlexArray={
 	  ]
 	}
 				}
-			]"
-	
+			]
 }

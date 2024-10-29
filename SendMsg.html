@@ -43,13 +43,7 @@
             </div>
             <!-- End of Main Content -->
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.10.24.1029. Copyright &copy; 大吉科技</span>
-                    </div>
-                </div>
-            </footer>
+            <div class="footerpage"></div>
             <!-- End of Footer -->
         </div>
         <!-- End of Content Wrapper -->
@@ -143,4 +137,6 @@ async function SendBusinessCard(){
 $( document ).ready(function() {
 	SendBusinessCard();
 });
+
+$(".footerpage").load("footerpage.html");
 </script>

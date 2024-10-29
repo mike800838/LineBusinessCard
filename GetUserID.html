@@ -106,6 +106,21 @@ async function SendBusinessCard(){
 	});
 	WriteLog(giLog_LEVEL_INFO,"getProfile success");
 	
+	if(sUserID){
+		if (liff.isApiAvailable('shareTargetPicker')) {
+			await liff.shareTargetPicker(FlexMessage).then(() => {
+				WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
+			}).catch(function(error) {
+				WriteLog(giLog_LEVEL_EXCEPTION, error);
+			});
+		}
+		else
+		{
+			alert("無法傳送給其他人");
+		}			
+	}else{
+		alert("無法取得用戶ID");
+	}
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");
 	

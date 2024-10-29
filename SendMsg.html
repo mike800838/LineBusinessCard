@@ -46,7 +46,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.8.24.1029. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.9.24.1029. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -136,7 +136,8 @@ async function SendBusinessCard(){
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");
 	
-	//liff.closeWindow();
+	liff.logout();
+	liff.closeWindow();
 }
 
 $( document ).ready(function() {

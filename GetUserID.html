@@ -34,13 +34,10 @@
             <div id="content">
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-					<div class="text-center">
-                        <h1 class="h3 mb-0 text-gray-800">已發送名片</h1>
-                    </div>
 					<div class="row py-2">					
 						<div class="col text-center">
-							<a href="#" class="btn btn-success btn-icon-split" id="buttom_close">                                        
-								<span class="text">關閉視窗</span>								
+							<a href="#" class="btn btn-success btn-icon-split" id="buttom_GetLineUserID">                                        
+								<span class="text">取得Line User ID</span>								
                             </a>
 						</div>
 					</div>
@@ -53,7 +50,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Line電子名片v.1.13.24.1028. Copyright &copy; 大吉科技</span>
+                        <span>Line電子名片v.1.8.24.1029. Copyright &copy; 大吉科技</span>
                     </div>
                 </div>
             </footer>
@@ -98,8 +95,25 @@ function WriteLog(iLogLevel, sLogMsg){
 	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
+async function GetLineUserID(){
+	WriteLog(giLog_LEVEL_INFO, "click");
+	
+	await liff.init({
+		liffId:'2006499149-DkaPN28L'
+	}).catch(function(error) {
+		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+	});		
+	WriteLog(giLog_LEVEL_SUCCESS, "init");
+	if (!liff.isLoggedIn()) {
+	   await liff.login().catch(function(error) {
+		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+		});		
+	}
+	WriteLog(giLog_LEVEL_SUCCESS, "login");
+}
+
 $("#buttom_close").click(function(){
-liff.closeWindow();
+	GetLineUserID();
 });
 
 </script>

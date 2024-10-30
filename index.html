@@ -46,13 +46,6 @@
                             </a>
 						</div>
 					</div>
-					<div class="row py-2">					
-						<div class="col text-center">
-							<a href="#" class="btn btn-success btn-icon-split" id="buttom_GetLineUserID">                                        
-								<span class="text">取得Line User ID</span>								
-                            </a>
-						</div>
-					</div>
 					<div class="row py-2">
 						<div class="col text-center">
 							<a href="#" class="btn btn-secondary btn-icon-split" id="buttom_Refresh">                                        
@@ -91,7 +84,8 @@
 	
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
+	<script src="BusinessCardFlex.js"></script>
+	
 </body>
 
 </html>
@@ -109,43 +103,44 @@ function WriteLog(iLogLevel, sLogMsg){
 	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
+async function LineLogin(){
+	WriteLog(giLog_LEVEL_INFO, "LineLogin");
+	
+	await liff.init({
+		liffId:'2006499149-Z4M3yBR5'
+	}).catch(function(error) {
+		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+	});		
+	WriteLog(giLog_LEVEL_SUCCESS, "init");
+	if (!liff.isLoggedIn()) {
+	   await liff.login().catch(function(error) {
+		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+		});		
+	}
+	WriteLog(giLog_LEVEL_SUCCESS, "login");
+}
+
 async function SendBusinessCard(){
-	WriteLog(giLog_LEVEL_INFO, "click");
-	
-	await liff.init({
-		liffId:'2006499149-ZvvbxV6J'
-	}).catch(function(error) {
-		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
-	});		
-	WriteLog(giLog_LEVEL_SUCCESS, "init");
-	if (!liff.isLoggedIn()) {
-	   await liff.login().catch(function(error) {
-		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
-		});		
-	}
-	WriteLog(giLog_LEVEL_SUCCESS, "login");
-}
+	WriteLog(giLog_LEVEL_INFO,"SendBusinessCard");
 
-async function GetLineUserID(){
-	WriteLog(giLog_LEVEL_INFO, "click");
-	
-	await liff.init({
-		liffId:'2006499149-DkaPN28L'
-	}).catch(function(error) {
-		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
-	});		
-	WriteLog(giLog_LEVEL_SUCCESS, "init");
-	if (!liff.isLoggedIn()) {
-	   await liff.login().catch(function(error) {
-		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
-		});		
+	if (liff.isApiAvailable('shareTargetPicker')) {
+		let FlexMessage = BusinessCardFlexArray["Ud27c8a222e4b1f2718f0e576bbeeb66a"];
+		await liff.shareTargetPicker(FlexMessage).then(() => {
+			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
+		}).catch(function(error) {
+			WriteLog(giLog_LEVEL_EXCEPTION, error);
+		});
 	}
-	WriteLog(giLog_LEVEL_SUCCESS, "login");
-}
+	else
+	{
+		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
+	}
 
-$("#buttom_GetLineUserID").click(function(){
-	GetLineUserID();
-});
+	WriteLog(giLog_LEVEL_INFO,"Finish");
+	
+	liff.logout();
+	liff.closeWindow();
+}
 
 $("#buttom_SendBusinessCard").click(function(){
 	SendBusinessCard();
@@ -153,6 +148,10 @@ $("#buttom_SendBusinessCard").click(function(){
 
 $("#buttom_Refresh").click(function(){
 	window.location.reload();
+});
+
+$( window ).load(function() {
+	LineLogin();
 });
 
 $(".footerpage").load("footerpage.html");

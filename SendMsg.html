@@ -85,7 +85,6 @@ function WriteLog(iLogLevel, sLogMsg){
 	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
-
 async function SendBusinessCard(){
 	WriteLog(giLog_LEVEL_INFO,"click");
 	await liff.init({
@@ -96,36 +95,17 @@ async function SendBusinessCard(){
 	WriteLog(giLog_LEVEL_INFO,"init success");
 	
 	
-	var sUserID = "";	
-	await liff.getProfile().then((profile) => {
-		sUserID = profile.userId;
-	}).catch((error) => {
-		WriteLog(giLog_LEVEL_EXCEPTION, error);
-	});
-	WriteLog(giLog_LEVEL_INFO,"getProfile success");
 	
-	
-	var FlexMessage = "";
-	if(sUserID){
-		FlexMessage = BusinessCardFlexArray[sUserID];
-		if(FlexMessage){
-			if (liff.isApiAvailable('shareTargetPicker')) {
-			await liff.shareTargetPicker(FlexMessage).then(() => {
-				WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
-			}).catch(function(error) {
-				WriteLog(giLog_LEVEL_EXCEPTION, error);
-			});
-			}
-			else
-			{
-				WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
-			}
-			
-		}else{
-			alert("找不到戶名片");
-		}
-	}else{
-		alert("無法取得用戶ID");
+	if (liff.isApiAvailable('shareTargetPicker')) {
+		await liff.shareTargetPicker(FlexMessage).then(() => {
+			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
+		}).catch(function(error) {
+			WriteLog(giLog_LEVEL_EXCEPTION, error);
+		});
+	}
+	else
+	{
+		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
 	}
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");

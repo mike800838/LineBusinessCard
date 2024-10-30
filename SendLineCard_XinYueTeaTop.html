@@ -34,9 +34,25 @@
             <div id="content">
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-					<div class="text-center">
-                        <h1 class="h3 mb-0 text-gray-800" id="text_ShowLineUserID">Line User ID: </h1>
-                    </div>
+
+                    <!-- Page Heading -->
+					<div class="row py-2">
+						<div class="col text-center">
+							<a href="#" class="btn btn-success btn-icon-split" id="buttom_SendBusinessCard">                                        
+								<span class="text">發送LINE名片</span>
+								<span class="icon text-white-50">
+									<i class="fas fa-arrow-right"></i>
+								</span>
+                            </a>
+						</div>
+					</div>
+					<div class="row py-2">
+						<div class="col text-center">
+							<a href="#" class="btn btn-secondary btn-icon-split" id="buttom_Refresh">                                        
+								<span class="text">重新整理</span>								
+                            </a>
+						</div>
+					</div>
 				</div>
                 <!-- /.container-fluid -->
 
@@ -64,14 +80,16 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 	
 	<!-- Line Liff JavaScript-->
-	<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
+	<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 	
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
+	<script src="BusinessCardFlex.js"></script>
+	
 </body>
 
 </html>
+
 <script>
 var giLog_LEVEL_INFO = 0;
 var giLog_LEVEL_SUCCESS = 1;
@@ -85,60 +103,57 @@ function WriteLog(iLogLevel, sLogMsg){
 	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
 }
 
-
+async function LineLogin(){
+	WriteLog(giLog_LEVEL_INFO, "LineLogin");
+	
+	await liff.init({
+		liffId:'2006499149-Z4M3yBR5'
+	}).catch(function(error) {
+		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+	});		
+	WriteLog(giLog_LEVEL_SUCCESS, "init");
+	if (!liff.isLoggedIn()) {
+	   await liff.login().catch(function(error) {
+		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+		});		
+	}
+	WriteLog(giLog_LEVEL_SUCCESS, "login");
+}
 
 async function SendBusinessCard(){
-	WriteLog(giLog_LEVEL_INFO,"click");
-	await liff.init({
-		liffId:"2006499149-DkaPN28L"
-	}).catch(function(error) {
-		WriteLog(giLog_LEVEL_EXCEPTION, error);
-	});		
-	WriteLog(giLog_LEVEL_INFO,"init success");
-	
-	
-	var sUserID = "";	
-	await liff.getProfile().then((profile) => {
-		sUserID = profile.userId;
-		$("#text_ShowLineUserID").html("Line User ID: " + sUserID);
-	}).catch((error) => {
-		WriteLog(giLog_LEVEL_EXCEPTION, error);
-	});
-	WriteLog(giLog_LEVEL_INFO,"getProfile success");
-	
-	if(sUserID){
-		if (liff.isApiAvailable('shareTargetPicker')) {
-			await liff.shareTargetPicker(    
-			[
-			  {
-				type: "text",
-				text: "Line User ID:" + sUserID,
-			  },
-			],
-			{
-			  isMultiple: true,
-			}).then(() => {
-				WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
-			}).catch(function(error) {
-				WriteLog(giLog_LEVEL_EXCEPTION, error);
-			});
-		}
-		else
-		{
-			alert("無法傳送給其他人");
-		}			
-	}else{
-		alert("無法取得用戶ID");
+	WriteLog(giLog_LEVEL_INFO,"SendBusinessCard");
+
+	if (liff.isApiAvailable('shareTargetPicker')) {
+		let FlexMessage = BusinessCardFlexArray["XinYueTeaTop"];
+		await liff.shareTargetPicker(FlexMessage).then(() => {
+			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
+		}).catch(function(error) {
+			WriteLog(giLog_LEVEL_EXCEPTION, error);
+		});
+	}
+	else
+	{
+		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
 	}
 
 	WriteLog(giLog_LEVEL_INFO,"Finish");
 	
 	liff.logout();
+	liff.closeWindow();
 }
 
-$( document ).ready(function() {
+$("#buttom_SendBusinessCard").click(function(){
 	SendBusinessCard();
 });
 
+$("#buttom_Refresh").click(function(){
+	window.location.reload();
+});
+
+$( document ).ready(function() {
+	LineLogin();
+});
+
 $(".footerpage").load("footerpage.html");
+
 </script>

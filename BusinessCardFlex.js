@@ -22,7 +22,7 @@ BusinessCardFlexArray={
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -40,21 +40,21 @@ BusinessCardFlexArray={
                       },
                       {
                         "type": "text",
-                        "text": "分享名片",
+                        "text": "✚ 加入好友",
                         "color": "#ffffff",
                         "flex": 0,
-                        "offsetTop": "-2px",
                         "action": {
                           "type": "uri",
                           "label": "action",
                           "uri": "https://liff.line.me/2006499149-Z4M3yBR5"
-                        }
+                        },
+                        "weight": "bold"
                       },
                       {
                         "type": "filler"
                       }
                     ],
-                    "spacing": "sm"
+                    "spacing": "none"
                   },
                   {
                     "type": "filler"
@@ -62,9 +62,52 @@ BusinessCardFlexArray={
                 ],
                 "borderWidth": "1px",
                 "cornerRadius": "6px",
-                "spacing": "sm",
+                "spacing": "none",
                 "borderColor": "#ffffff",
-                "margin": "xxl",
+                "margin": "lg",
+                "height": "30px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "➤ 分享名片",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://liff.line.me/2006499149-Z4M3yBR5"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "none",
+                "borderColor": "#ffffff",
+                "margin": "lg",
                 "height": "30px"
               }
             ],
@@ -95,7 +138,7 @@ BusinessCardFlexArray={
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -116,12 +159,12 @@ BusinessCardFlexArray={
                         "text": "加入心悅官方Line",
                         "color": "#ffffff",
                         "flex": 0,
-                        "offsetTop": "-2px",
                         "action": {
                           "type": "uri",
                           "label": "action",
                           "uri": "https://lin.ee/jRipkqn"
-                        }
+                        },
+                        "weight": "bold"
                       },
                       {
                         "type": "filler"
@@ -168,7 +211,7 @@ BusinessCardFlexArray={
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -189,12 +232,12 @@ BusinessCardFlexArray={
                         "text": "追蹤心悅FB",
                         "color": "#ffffff",
                         "flex": 0,
-                        "offsetTop": "-2px",
                         "action": {
                           "type": "uri",
                           "label": "action",
                           "uri": "https://www.facebook.com/profile.php?id=61561379589466"
-                        }
+                        },
+                        "weight": "bold"
                       },
                       {
                         "type": "filler"
@@ -214,7 +257,7 @@ BusinessCardFlexArray={
                 "height": "30px"
               }
             ],
-            "position": "absolute",
+            "position": "relative",
             "offsetBottom": "0px",
             "offsetStart": "0px",
             "offsetEnd": "0px",
@@ -241,7 +284,7 @@ BusinessCardFlexArray={
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -262,12 +305,12 @@ BusinessCardFlexArray={
                         "text": "心悅茶行官網",
                         "color": "#ffffff",
                         "flex": 0,
-                        "offsetTop": "-2px",
                         "action": {
                           "type": "uri",
                           "label": "action",
                           "uri": "https://sites.google.com/view/xinyueteatop/%E9%A6%96%E9%A0%81"
-                        }
+                        },
+                        "weight": "bold"
                       },
                       {
                         "type": "filler"

@@ -46,7 +46,7 @@ BusinessCardFlexArray={
                         "action": {
                           "type": "uri",
                           "label": "action",
-                          "uri": "https://liff.line.me/2006499149-Z4M3yBR5"
+                          "uri": "https://line.me/ti/p/zGPR-D0V4v"
                         },
                         "weight": "bold"
                       },

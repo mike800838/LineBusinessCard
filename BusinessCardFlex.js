@@ -14,7 +14,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_2411050051.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_241119.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -130,7 +130,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2_2411050051.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2_241119.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -203,7 +203,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3_2411050051.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3_241119.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -276,7 +276,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua4_2411050051.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua4_241119.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",

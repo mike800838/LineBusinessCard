@@ -461,7 +461,7 @@ BusinessCardFlexArray={
             "offsetBottom": "0px",
             "offsetStart": "0px",
             "offsetEnd": "0px",
-            "backgroundColor": "#9C8E7E",
+            "backgroundColor": "#39666b",
             "paddingAll": "10px"
           }
         ],
@@ -477,79 +477,6 @@ BusinessCardFlexArray={
           {
             "type": "image",
             "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/2.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3",
-            "gravity": "top"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "filler"
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "filler"
-                      },
-                      {
-                        "type": "text",
-                        "text": "加入慵懶兔兔官方Line",
-                        "color": "#ffffff",
-                        "flex": 0,
-                        "action": {
-                          "type": "uri",
-                          "label": "action",
-                          "uri": "https://lin.ee/qEnGke6"
-                        },
-                        "weight": "bold"
-                      },
-                      {
-                        "type": "filler"
-                      }
-                    ],
-                    "spacing": "sm"
-                  },
-                  {
-                    "type": "filler"
-                  }
-                ],
-                "borderWidth": "1px",
-                "cornerRadius": "6px",
-                "spacing": "sm",
-                "borderColor": "#ffffff",
-                "margin": "xxl",
-                "height": "30px"
-              }
-            ],
-            "position": "absolute",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#9C8E7E",
-            "paddingAll": "10px"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/3.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -603,11 +530,84 @@ BusinessCardFlexArray={
                 "height": "30px"
               }
             ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#39666b",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/3.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "預約寵物溝通",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://lin.ee/qEnGke6"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
             "position": "relative",
             "offsetBottom": "0px",
             "offsetStart": "0px",
             "offsetEnd": "0px",
-            "backgroundColor": "#9C8E7E",
+            "backgroundColor": "#39666b",
             "paddingAll": "10px"
           }
         ],
@@ -648,13 +648,13 @@ BusinessCardFlexArray={
                       },
                       {
                         "type": "text",
-                        "text": "心悅茶行官網",
+                        "text": "報名課程",
                         "color": "#ffffff",
                         "flex": 0,
                         "action": {
                           "type": "uri",
                           "label": "action",
-                          "uri": "https://sites.google.com/view/xinyueteatop/%E9%A6%96%E9%A0%81"
+                          "uri": "https://lin.ee/qEnGke6"
                         },
                         "weight": "bold"
                       },
@@ -680,7 +680,80 @@ BusinessCardFlexArray={
             "offsetBottom": "0px",
             "offsetStart": "0px",
             "offsetEnd": "0px",
-            "backgroundColor": "#9C8E7E",
+            "backgroundColor": "#39666b",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/5.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "購買精油",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://myship.7-11.com.tw/general/detail/GM2407079211357"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#39666b",
             "paddingAll": "10px"
           }
         ],

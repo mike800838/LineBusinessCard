@@ -14,7 +14,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_241119.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_241202.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -130,7 +130,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2_241119.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua2_241202.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -203,7 +203,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3_241119.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua3_241202.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -276,7 +276,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua4_241119.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua4_241202.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -302,7 +302,153 @@ BusinessCardFlexArray={
                       },
                       {
                         "type": "text",
-                        "text": "心悅茶行官網",
+                        "text": "購買心悅嚴選茶包組",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://sites.google.com/view/xinyueteatop/%E9%A6%96%E9%A0%81"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#9C8E7E",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+	{
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua6_241202.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "購買心悅精緻茶禮盒",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://sites.google.com/view/xinyueteatop/%E9%A6%96%E9%A0%81"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#9C8E7E",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+	{
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua6_241202.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "購買心悅清新花果茶",
                         "color": "#ffffff",
                         "flex": 0,
                         "action": {

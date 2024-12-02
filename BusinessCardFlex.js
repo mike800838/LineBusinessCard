@@ -14,7 +14,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_241202.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua1_241202.apng",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -349,7 +349,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua6_241202.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/XinYua5_241202.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",

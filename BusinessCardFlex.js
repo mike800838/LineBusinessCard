@@ -506,7 +506,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/1.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/20250210_1.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -622,7 +622,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/2.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/20250210_2.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -695,7 +695,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/3.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/20250210_3.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -768,7 +768,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/4.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/20250210_4.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",
@@ -841,7 +841,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/5.png",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Relaxing22Home/20250210_5.png",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",

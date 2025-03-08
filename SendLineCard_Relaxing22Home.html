@@ -120,6 +120,16 @@ async function LineLogin(){
 		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
 		});		
 	}
+	
+	liff.getProfile()
+   .then(profile => {
+    const name = profile.userId;
+	alert(name);
+   })
+   .catch((err) => {
+    console.log('error', err);
+   });
+   
 	WriteLog(giLog_LEVEL_SUCCESS, "login");
 }
 

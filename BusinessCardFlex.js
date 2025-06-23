@@ -1000,7 +1000,7 @@ BusinessCardFlexArray={
                         "action": {
                           "type": "uri",
                           "label": "action",
-                          "uri": "https://liff.line.me/2006499149-epQjdbAv"
+                          "uri": "https://liff.line.me/2006499149-npz1OJmK"
                         },
                         "weight": "bold"
                       },
@@ -1041,7 +1041,7 @@ BusinessCardFlexArray={
         "contents": [
           {
             "type": "image",
-            "url": "https://mike800838.github.io/LineBusinessCard/img/Heher/Menu01/02.jpg",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Heher/Menu01/02.jpg",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "2:3",

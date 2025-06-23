@@ -128,7 +128,7 @@ async function SendBusinessCard(){
 	WriteLog(giLog_LEVEL_INFO,"SendBusinessCard");
 
 	if (liff.isApiAvailable('shareTargetPicker')) {
-		let FlexMessage = BusinessCardFlexArray["Relaxing22Home"];
+		let FlexMessage = BusinessCardFlexArray["Heher_Menu01"];
 		await liff.shareTargetPicker(FlexMessage).then(() => {
 			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
 		}).catch(function(error) {

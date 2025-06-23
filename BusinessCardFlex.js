@@ -909,5 +909,278 @@ BusinessCardFlexArray={
   ]
 }
 				}
+			],	
+	"Heher_Menu01": [
+				{
+				  'type': 'flex',
+				  'altText': 'this is a flex message',
+				  'contents': {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Heher/Menu01/01.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "✚ 聯絡詢問",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://l.instagram.com/?u=https%3A%2F%2Flin.ee%2F6FSNGD2&e=AT2_fRtrT_rDWH8GYs5AX77viEvaSA9AJVVxdWNgB1Hf84rWWasnZLlfkjzlz4Cdn2Hlr95l8Ui3TuPodV9ZM-1IKoL33cFZTiw5b_lFyVb0qsE5"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "none",
+                "borderColor": "#ffffff",
+                "margin": "lg",
+                "height": "30px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "➤ 分享菜單",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://liff.line.me/2006499149-epQjdbAv"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "none"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "none",
+                "borderColor": "#ffffff",
+                "margin": "lg",
+                "height": "30px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#39666b",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/Heher/Menu01/02.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "追蹤 He Her IG",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://www.instagram.com/heher_cake/"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#39666b",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/Heher/Menu01/03.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "追蹤塔屋IG",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://www.instagram.com/tartemaison_/"
+                        },
+                        "weight": "bold"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "6px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "30px"
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#39666b",
+            "paddingAll": "10px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+]
+}
+				}
 			],
 }

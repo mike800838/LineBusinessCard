@@ -1203,7 +1203,7 @@ BusinessCardFlexArray={
         "size": "full",
         "aspectMode": "fit",
         "gravity": "center",
-        "aspectRatio": "2:2.5"
+        "aspectRatio": "4:5"
       }
     ],
     "paddingAll": "none",

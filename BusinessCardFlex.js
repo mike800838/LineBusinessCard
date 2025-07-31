@@ -1265,7 +1265,12 @@ BusinessCardFlexArray={
               {
                 "type": "text",
                 "text": "分享優惠",
-                "color": "#FFFFFF"
+                "color": "#FFFFFF",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                }
               },
               {
                 "type": "filler"

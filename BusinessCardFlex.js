@@ -1183,4 +1183,170 @@ BusinessCardFlexArray={
 }
 				}
 			],
+	"XinYueTeaTop_2025moon": 
+[
+	{
+		'type': 'flex',
+		'altText': 'this is a flex message',
+		'contents': {
+		"type": "carousel",
+		"contents": [
+			{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/XinYua/2025Moon/0731-EDM-B1.jpg",
+        "size": "full",
+        "aspectMode": "fit",
+        "gravity": "center",
+        "aspectRatio": "2:2.5"
+      }
+    ],
+    "paddingAll": "none",
+    "paddingEnd": "none",
+    "paddingBottom": "50%"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "filler"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "text",
+                "text": "前往購買",
+                "color": "#FFFFFF"
+              },
+              {
+                "type": "filler"
+              }
+            ]
+          },
+          {
+            "type": "filler"
+          }
+        ],
+        "cornerRadius": "6px",
+        "borderWidth": "1px",
+        "borderColor": "#FFFFFF",
+        "height": "30px",
+        "alignItems": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "filler"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "text",
+                "text": "分享優惠",
+                "color": "#FFFFFF"
+              },
+              {
+                "type": "filler"
+              }
+            ]
+          },
+          {
+            "type": "filler"
+          }
+        ],
+        "cornerRadius": "6px",
+        "borderWidth": "1px",
+        "borderColor": "#FFFFFF",
+        "height": "30px",
+        "alignItems": "center",
+        "margin": "md",
+        "offsetStart": "none",
+        "offsetEnd": "none"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "filler"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "text",
+                "text": "聯絡心悅",
+                "color": "#FFFFFF"
+              },
+              {
+                "type": "filler"
+              }
+            ]
+          },
+          {
+            "type": "filler"
+          }
+        ],
+        "cornerRadius": "6px",
+        "borderWidth": "1px",
+        "borderColor": "#FFFFFF",
+        "height": "30px",
+        "alignItems": "center",
+        "margin": "md",
+        "offsetEnd": "none",
+        "offsetStart": "none",
+        "spacing": "none",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/u7n4p8e"
+        }
+      }
+    ],
+    "position": "relative",
+    "offsetBottom": "0px",
+    "offsetStart": "0px",
+    "offsetEnd": "0px",
+    "backgroundColor": "#9A3623",
+    "paddingAll": "none",
+    "paddingTop": "md",
+    "paddingBottom": "md",
+    "offsetTop": "none",
+    "height": "50px",
+    "spacing": "none",
+    "margin": "none",
+    "paddingStart": "xl",
+    "paddingEnd": "xl"
+  }
+}
+		  ]
+		}
+	}
+]
 }

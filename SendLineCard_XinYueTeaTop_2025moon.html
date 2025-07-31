@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>大吉科技 - Line Business Card</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <div class="row py-2">
+						<div class="col text-center">
+							<img src="./img/LineBC/XinYua/2025Moon/0731-EDM-B1.jpg" style="height:400px;" class="img-thumbnail" alt="...">
+						</div>
+					</div>
+					<div class="row py-2">
+						<div class="col text-center">
+							<a href="#" class="btn btn-success btn-icon-split" id="buttom_SendBusinessCard">                                        
+								<span class="text">發送LINE名片</span>
+								<span class="icon text-white-50">
+									<i class="fas fa-arrow-right"></i>
+								</span>
+                            </a>
+						</div>
+					</div>
+					<div class="row py-2">
+						<div class="col text-center">
+							<a href="#" class="btn btn-secondary btn-icon-split" id="buttom_Refresh">                                        
+								<span class="text">重新整理</span>								
+                            </a>
+						</div>
+					</div>
+				</div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <div class="footerpage"></div>
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	
+	<!-- Line Liff JavaScript-->
+	<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+	
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+	<script src="BusinessCardFlex.js"></script>
+	
+</body>
+
+</html>
+
+<script>
+var giLog_LEVEL_INFO = 0;
+var giLog_LEVEL_SUCCESS = 1;
+var giLog_LEVEL_FAIL = 2;
+var giLog_LEVEL_WARNING = 3;
+var giLog_LEVEL_EXCEPTION = 4;
+var gaLog_LEVEL_DESCRIPTION = ["[資訊]","[成功]","[失敗]","[警告]","[異常]"];
+
+function WriteLog(iLogLevel, sLogMsg){
+	//alert(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+	console.log(gaLog_LEVEL_DESCRIPTION[iLogLevel] + " " + sLogMsg);
+}
+
+async function LineLogin(){
+	WriteLog(giLog_LEVEL_INFO, "LineLogin");
+	
+	await liff.init({
+		liffId:'2006499149-Z4M3yBR5'
+	}).catch(function(error) {
+		WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+	});		
+	WriteLog(giLog_LEVEL_SUCCESS, "init");
+	if (!liff.isLoggedIn()) {
+	   await liff.login().catch(function(error) {
+		  WriteLog(gaLog_LEVEL_DESCRIPTION, error.code + ". " + error.message);
+		});		
+	}
+	WriteLog(giLog_LEVEL_SUCCESS, "login");
+}
+
+async function SendBusinessCard(){
+	WriteLog(giLog_LEVEL_INFO,"SendBusinessCard");
+
+	if (liff.isApiAvailable('shareTargetPicker')) {
+		let FlexMessage = BusinessCardFlexArray["XinYueTeaTop_2025moon"];
+		await liff.shareTargetPicker(FlexMessage).then(() => {
+			WriteLog(giLog_LEVEL_INFO, "shareTargetPicker success");
+		}).catch(function(error) {
+			WriteLog(giLog_LEVEL_EXCEPTION, error);
+		});
+	}
+	else
+	{
+		WriteLog(giLog_LEVEL_WARNING, "Failed to launch ShareTargetPicker");
+	}
+
+	WriteLog(giLog_LEVEL_INFO,"Finish");
+	
+	liff.logout();
+	liff.closeWindow();
+}
+
+$("#buttom_SendBusinessCard").click(function(){
+	SendBusinessCard();
+});
+
+$("#buttom_Refresh").click(function(){
+	window.location.reload();
+});
+
+$( document ).ready(function() {
+	LineLogin();
+});
+
+$(".footerpage").load("footerpage.html");
+
+</script>

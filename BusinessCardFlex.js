@@ -1208,7 +1208,7 @@ BusinessCardFlexArray={
     ],
     "paddingAll": "none",
     "paddingEnd": "none",
-    "paddingBottom": "50%"
+    "paddingBottom": "0%"
   },
   "footer": {
     "type": "box",

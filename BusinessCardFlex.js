@@ -1400,7 +1400,12 @@ BusinessCardFlexArray={
                   {
                     "type": "text",
                     "text": "前往詢問",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://lin.ee/ZMGGtYO"
+                    }
                   },
                   {
                     "type": "filler"
@@ -1438,7 +1443,7 @@ BusinessCardFlexArray={
                     "action": {
                       "type": "uri",
                       "label": "action",
-                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                      "uri": "https://liff.line.me/2006499149-0RjKwqkP"
                     }
                   },
                   {
@@ -1672,7 +1677,12 @@ BusinessCardFlexArray={
                   {
                     "type": "text",
                     "text": "前往詢問",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://lin.ee/ZMGGtYO"
+                    }
                   },
                   {
                     "type": "filler"
@@ -1710,7 +1720,7 @@ BusinessCardFlexArray={
                     "action": {
                       "type": "uri",
                       "label": "action",
-                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                      "uri": "https://liff.line.me/2006499149-0RjKwqkP"
                     }
                   },
                   {

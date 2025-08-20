@@ -1183,8 +1183,7 @@ BusinessCardFlexArray={
 }
 				}
 			],
-	"XinYueTeaTop_2025moon": 
-[
+	"XinYueTeaTop_2025moon": [
 	{
 		'type': 'flex',
 		'altText': 'this is a flex message',
@@ -1353,5 +1352,712 @@ BusinessCardFlexArray={
 		  ]
 		}
 	}
-]
+],
+	"DGtek_LineMenu": [
+	{
+		'type': 'flex',
+		'altText': 'this is a flex message',
+		'contents': {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/1.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "2px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "2px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/2.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/3.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/4.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/5.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://mike800838.github.io/LineBusinessCard/img/LineBC/DGtek/LineMenu/6.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "gravity": "center",
+            "aspectRatio": "2.1:3.5"
+          }
+        ],
+        "paddingAll": "none",
+        "paddingEnd": "none",
+        "paddingBottom": "0%"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "前往詢問",
+                    "color": "#FFFFFF"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "filler"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "text",
+                    "text": "分享資訊",
+                    "color": "#FFFFFF",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://liff.line.me/2006499149-7G6rGOde"
+                    }
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ]
+              },
+              {
+                "type": "filler"
+              }
+            ],
+            "cornerRadius": "6px",
+            "borderWidth": "1px",
+            "borderColor": "#FFFFFF",
+            "height": "30px",
+            "alignItems": "center",
+            "margin": "md",
+            "offsetStart": "none",
+            "offsetEnd": "none"
+          }
+        ],
+        "position": "relative",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "backgroundColor": "#005d30",
+        "paddingAll": "none",
+        "paddingTop": "md",
+        "paddingBottom": "md",
+        "offsetTop": "none",
+        "height": "50px",
+        "spacing": "none",
+        "margin": "none",
+        "paddingStart": "xl",
+        "paddingEnd": "xl"
+      }
+    }
+  ]
+}
+	}
+],
 }

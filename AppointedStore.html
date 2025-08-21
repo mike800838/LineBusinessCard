@@ -56,8 +56,7 @@
 					  <ul class="navbar-nav ms-auto">
 						<li class="nav-item">
 						  <a class="nav-link d-flex align-items-center" href="#">     
-							<div id="Login_Img"></div>
-							<i class="bi bi-person-circle fs-4"></i>
+							<div id="Login_Img"><i class="bi bi-person-circle fs-4"></i></div>							
 							<span class="me-2 text-white px-2" id="Login_Name">-</span>
 						  </a>
 						</li>
@@ -150,7 +149,7 @@ function getProfile() {
       const statusMessage = profile.statusMessage;
 
 	  $("#Login_Name").html(displayName);
-	  $("#Login_Img").html("<img src='"+pictureUrl+"' style='width:50px;height:50px'/>");
+	  $("#Login_Img").html("<img class='rounded-circle img-fluid' src='"+pictureUrl+"' style='width:20px;height:20px'/>");
       console.log("使用者名稱:", displayName);
       console.log("userId:", userId);
       console.log("頭像 URL:", pictureUrl);

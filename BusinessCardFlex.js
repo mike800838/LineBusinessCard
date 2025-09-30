@@ -654,7 +654,7 @@ BusinessCardFlexArray={
                         "action": {
                           "type": "uri",
                           "label": "action",
-                          "uri": "https://www.instagram.com/relaxing_22_home/"
+                          "uri": "https://www.instagram.com/relaxing_22_rabbit/"
                         },
                         "weight": "bold"
                       },
